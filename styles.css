@@ -1,0 +1,45 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+section,
+footer {
+  height: 400px;
+  border: 2px solid;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
