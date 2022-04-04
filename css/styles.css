@@ -17,6 +17,10 @@ h2 {
   font-size: 1.5em;
 }
 
+h3 {
+  font-size: 1.125em;
+}
+
 header {
   display: flex;
   justify-content: space-around;
@@ -50,6 +54,8 @@ a {
 #profile {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+
+  height: fit-content;
 }
 
 .section-header {
@@ -77,10 +83,24 @@ figure {
   grid-row-gap: 1em;
 }
 
-#introduction-name {
+#introduction-header {
   grid-column: 1 / 3;
 }
 
 #introduction-body {
   grid-column: 2 / 13;
+}
+
+#skills {
+  grid-column: 2 / 4;
+}
+
+#icon-wrapper {
+  grid-column: 2 / 5;
+
+  display: flex;
+}
+
+.icon {
+  width: 64px;
 }
