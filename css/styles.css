@@ -75,7 +75,7 @@ a {
   width: 100%;
 }
 
-.introduction-wrapper {
+.right-wrapper {
   grid-column: 7 / 13;
   grid-row: 2 / 3;
 
@@ -85,11 +85,11 @@ a {
   grid-row-gap: 1em;
 }
 
-.introduction-header {
+.right-header {
   grid-column: 1 / 7;
 }
 
-.introduction-body {
+.right-body {
   grid-column: 2 / 13;
 }
 
