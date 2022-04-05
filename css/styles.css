@@ -97,7 +97,7 @@ a {
   grid-column: 2 / 4;
 }
 
-#icon-wrapper {
+#profile-icon-wrapper {
   grid-column: 2 / 5;
 
   display: flex;
@@ -120,4 +120,13 @@ a {
 
 .link {
   grid-column: 2 / 4;
+}
+
+#footer-icon-wrapper {
+  grid-column: 6 / 8;
+  grid-row: 2 / 3;
+
+  display: flex;
+
+  margin-bottom: 1em;
 }
