@@ -26,7 +26,17 @@ h3 {
   font-size: 1.125em;
 }
 
-.header-content {
+header,
+.eyecatch,
+.section {
+  border-bottom: 2px solid;
+}
+
+#contact {
+  border-bottom: none;
+}
+
+header {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -49,26 +59,28 @@ h3 {
 }
 
 .eyecatch {
-  border-top: 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-
-  height: 15vh;
+  height: 30vh;
 }
 
 #eyecatch-message-container {
   font-weight: normal;
-  grid-column: 1 / 7;
-  margin-left: 1.66em;
 }
 
-.section {
-  border-bottom: 2px solid;
+.eyecatch-message {
+  display: block;
+  position: relative;
 }
 
-#contact {
-  border-bottom: none;
+#eyecatch-first-line {
+  left: -0.5em;
+}
+
+#eyecatch-second-line {
+  left: 0.5em;
 }
 
 .section {
