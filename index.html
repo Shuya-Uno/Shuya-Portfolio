@@ -2,56 +2,130 @@
 <html lang="ja" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Title</title>
+    <title>Shuya's Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
   </head>
 
   <body>
     <header>
-      <h1>Title</h1>
-      <nav>
-        <a href="#profile">Profile</a>
-        <a href="#work-one">Work One</a>
-        <a href="#work-two">Work Two</a>
-        <a href="#contact">Contact</a>
-      </nav>
+        <h1 id="page-title">Shuya's Portfolio</h1>
+        <nav id="page-navigation">
+          <a class="navigation" href="#profile">Profile</a>
+          <a class="navigation" href="#work-one">Works</a>
+          <a class="navigation" href="#contact">Contact</a>
+        </nav>
     </header>
 
-    <main>
-      <section>
-        <h2>Eye Catch</h2>
-      </section>
+    <div class="page">
+      <main>
+        <section>
+        <div class="eyecatch">
+          <h2 id="eyecatch-message-container">
+            <span id="eyecatch-first-line" class="eyecatch-message">心に寄り添う。</span>
+            <span id="eyecatch-second-line" class="eyecatch-message">夢に寄り添う。</span>
+          </div>
+        </section>
 
-      <section id="profile">
-        <h2>Profile</h2>
-      </section>
+        <section id="profile" class="section">
+          <h2 class="section-header">Profile</h2>
+          <figure id="profile-image-wrapper">
+            <img id="profile-image" src="images/hasu.JPG" alt="">
+          </figure>
 
-      <section id="work-one">
-        <h2>Work One</h2>
-        <img src="images/Sado-Game-mock-end.png" alt="" style="width:640px">
-        <a
-        href="https://shuya-uno.github.io/Sado-Game/"
-        target="_blank">Here</a>
-      </section>
+          <div class="right-wrapper">
+            <h3 class="right-header">Shuya Uno</h3>
+            <p>
+              <ul class="right-body">
+                <li>埼玉大学で人文系を広く学ぶ4年生(2022年4月現在)。</li>
+                <li>5歳から7歳までの2年半をアメリカのオハイオ州で過ごした。</li>
+                <li>そこで身に着けた英語力で、2019年9月にTOEIC905点を獲得。</li>
+                <li>大学入学後は、自分に合った英語でWeb開発・デザインの独学を継続している。</li>
+                <li>夢は、日本で帰国子女向けのWebコミュニティを作ること。</li>
+              </ul>
+            </p>
 
-      <section id="work-two">
-        <h2>Work Two</h2>
-        <img src="images/Find-the-Treasure-mock-play-2.png" alt="" style="width:640px">
-        <a
-        href="https://shuya-uno.github.io/Find-the-Treasure/"
-        target="_blank">Here</a>
-      </section>
-    </main>
+            <h3 id="skills">Skills</h3>
+            <div id="profile-icon-wrapper">
+              <figure>
+                <img class="icon" src="images/html5.png" alt="">
+              </figure>
+              <figure>
+                <img class="icon" src="images/css3.png" alt="">
+              </figure>
+              <figure>
+                <img class="icon" src="images/javascript.png" alt="">
+              </figure>
+            </div>
+          </div>
+        </section>
 
-    <footer id="contact">
-      <h2>Contact</h2>
-      <nav>
-        <a
-        href="https://github.com/Shuya-Uno"
-        target="_blank">
-          <img src="images/GitHub-Mark-64px.png" alt="" style="width:64px">
-        </a>
-      </nav>
-    </footer>
+        <section id="work-one" class="section works">
+          <h2 class="section-header">Work One</h2>
+          <figure class="works-image-wrapper">
+            <img class="works-image" src="images/mock-sado-end.png" alt="">
+          </figure>
+
+          <div class="right-wrapper">
+            <h3 class="right-header">お茶会、お先にゲームで楽しく。</h3>
+            <p>
+              <ul class="right-body">
+                <li>日本に来てくれた留学生向けの、茶道のお茶会を体験してもらうゲーム。</li>
+                <li>茶会の特につまづきやすい箇所に選択肢を置き、茶会参加の敷居が低くなるように試みた。</li>
+                <li>どの選択肢を選んでも、明るいジョークや心地よさのあるエンディングになるよう心掛けた。</li>
+                <li>自由な選択肢・多様な結末は、幼少期に遊んだデジモンの自由な進化から発想を得た。</li>
+              </ul>
+            </p>
+            <div class="works-link">
+              <a
+              href="https://shuya-uno.github.io/Sado-Game/"
+              target="_blank">遊んでみる</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="work-two" class="section works">
+          <h2 class="section-header">Work Two</h2>
+          <figure class="works-image-wrapper">
+            <img class="works-image" src="images/mock-treasure-play.png" alt="">
+          </figure>
+
+          <div class="right-wrapper">
+            <h3 class="right-header">駆けて、かわして、宝を掴め！</h3>
+            <p>
+              <ul class="right-body">
+                <li>追ってくる敵をかわしながら、ゴールの宝を目指す2Dアクションゲーム。</li>
+                <li>快適なプレイ体験を実現するため、UIデザインでは柔らかい質感を追求。</li>
+                <li>ユーザーのCPUやメモリへの負担を最小限にするため、内部コードの洗練に力を注いだ。</li>
+                <li>幼少期に触れたGBCゼルダの伝説のような俯瞰型の世界観を、自由に動き回れるゲームを目指した。</li>
+                <li>宝・敵の場所を探知するレーダー機能を実装予定。</li>
+              </ul>
+            </p>
+            <div class="works-link">
+              <a
+              href="https://shuya-uno.github.io/Find-the-Treasure/"
+              target="_blank">遊んでみる</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer id="contact" class="section">
+        <h2 class="section-header">Contact</h2>
+
+        <nav id="footer-icon-wrapper">
+          <a
+          class="contact-link"
+          href="mailto:s.uno.6450@gmail.com">
+            <img class="icon" src="images/gmail.png" alt="">
+          </a>
+          <a
+          class="contact-link"
+          href="https://github.com/Shuya-Uno"
+          target="_blank">
+            <img class="icon" src="images/github.png" alt="">
+          </a>
+        </nav>
+      </footer>
+    </div>
   </body>
 </html>
