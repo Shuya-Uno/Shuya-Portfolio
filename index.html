@@ -28,16 +28,14 @@
 
         <section id="profile" class="section">
           <h2 class="section-header">Profile</h2>
-          <picture id="profile-image-wrapper">
-            <source media="(max-width: 499px)" srcset="images/lotus-2016w.JPG">
-            <source media="(min-width: 500px)" srcset="images/lotus-3024w.JPG">
-            <img id="profile-image" src="images/lotus-3024w.JPG" alt="">
-          </picture>
-          <!--
-            Image optimization using <source>
-            Is a compromise between CSS grid layout and Resolution switching
-            2016w image for mobile devices (can manage up to 4x DPPX devices)
-          -->
+          <figure id="profile-image-wrapper">
+            <img id="profile-image"
+                 srcset="images/lotus-3024w.JPG 3024w,
+                  images/lotus-2016w.JPG 2016w"
+                 src="images/lotus-3024w.JPG"
+                 alt="">
+          </figure>
+          <!-- Image optimization using srcset -->
 
           <div class="right-wrapper">
             <h3 class="right-header">Shuya Uno</h3>
